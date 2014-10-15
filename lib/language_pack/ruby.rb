@@ -359,8 +359,6 @@ WARNING
 
         install_jce
       end
-
-      install_jce
     end
   end
 
