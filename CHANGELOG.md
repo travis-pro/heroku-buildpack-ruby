@@ -1,5 +1,126 @@
 ## Master
 
+## v127 (9/18/2014)
+
+* rbx is now stack aware
+
+## v126 (8/4/2014)
+
+* fix bundler cache clearing on ruby version change
+* vendor the jvm when yui-compressor is detected
+
+## v125 (8/1/2014)
+
+* bump to node 0.10.30 on cedar-14
+
+## v124 (8/1/2014)
+
+* use node 0.10.29 on cedar-14
+* properly use vendored jvm, so not to be dependent on java on the stack image
+
+## v123 (7/25/2014)
+
+* fix permission denied edge cases when copying the bundler cache with minitest
+
+## v122 (7/25/2014)
+
+* handle bundler cache for stack changes on existing apps
+
+## v121 (6/30/2014)
+
+* on new apps, source default envs instead of replacing them
+* support different stacks for new apps
+
+## v120 (6/16/2014)
+
+* Bump bundler to 1.6.3 which includes improved dependency resolver
+
+## v119 (5/9/2014)
+
+* Temporarily disable default ruby cache
+
+## v118 (5/6/2014)
+
+* Ruby version detection now loads user environment variables
+
+## v117 (4/14/2014)
+
+Features:
+
+
+Bugfixes:
+
+* fix anvil use case of multibuildpack with node
+
+
+## v116 (4/10/2014)
+
+Features:
+
+
+Bugfixes:
+
+* Revert back to Bundler 1.5.2
+
+
+## v115 (4/9/2014)
+
+Features:
+
+
+Bugfixes:
+
+* Add default process types to all apps deployed regardless of `Procfile`
+
+## v114 (4/9/2014)
+
+Features:
+
+* Bundler 1.6.1
+* Warn when not using a Procfile (looking at you webrick)
+
+Bugfixes:
+
+
+## v113 (4/8/2014)
+
+Features:
+
+* use heroku-buildpack-nodejs's node binary
+* `CURL_CONNECT_TIMEOUT` and `CURL_TIMEOUT` are configurable as ENV vars
+
+Bugfixes:
+
+* Don't double print "Running: rake assets:precompile" on Ruby apps
+
+
+## v112 (3/27/2014)
+
+Features:
+
+
+Bugfixes:
+
+* compile psych with libyaml 0.1.6 for CVE-2014-2525
+
+## v111 (3/20/2014)
+
+Features:
+
+
+Bugfixes:
+
+* spelling
+
+
+## v110 (3/20/2014)
+
+Features:
+
+* Better message when running `assets:precompile` without a database
+
+Bugfixes:
+
 ## v108 (2/27/2014)
 
 Features:
